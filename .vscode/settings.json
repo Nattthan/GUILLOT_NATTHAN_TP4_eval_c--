@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "d:\\Ecole\\3A\\C++\\TP\\GUILLOT_NATTHAN_TP4_eval_c++",
+            "binaryPath": "d:\\Ecole\\3A\\C++\\TP\\GUILLOT_NATTHAN_TP4_eval_c++\\output",
+            "binaryArgs": []
+        }
+    ]
+}

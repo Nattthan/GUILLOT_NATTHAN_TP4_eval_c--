@@ -1,19 +1,19 @@
-all	:	output
+all	: output
 
-output	:	main.o	Dresseur.o	Pokemon.o TypePokemon.o
-	g++	main.o	Dresseur.o	Pokemon.o TypePokemon.o	-o	output
+output	: Guillot_Natthan_app.o Guillot_Natthan_Horaire.o Guillot_Natthan_train.o Guillot_Natthan_Compagnie.o
+	g++	Guillot_Natthan_app.o Guillot_Natthan_Horaire.o Guillot_Natthan_train.o Guillot_Natthan_Compagnie.o -o output
 
-main.o : main.cpp
-	g++ -c main.cpp
+main.o : Guillot_Natthan_app.cpp
+	g++ -c Guillot_Natthan_app.cpp
 
-Dresseur.o : Dresseur.cpp Dresseur.hpp
-	g++ -c Dresseur.cpp
+Guillot_Natthan_Horaire.o : Guillot_Natthan_Horaire.cpp Guillot_Natthan_Horaire.h
+	g++ -c Guillot_Natthan_Horaire.cpp
 
-Pokemon.o : Pokemon.cpp Pokemon.hpp
-	g++ -c Pokemon.cpp
+Guillot_Natthan_train.o : Guillot_Natthan_train.cpp Guillot_Natthan_train.h
+	g++ -c Guillot_Natthan_train.cpp
 
-TypePokemon.o : TypePokemon.cpp TypePokemon.hpp
-	g++ -c TypePokemon.cpp
+Guillot_Natthan_Compagnie.o : Guillot_Natthan_Compagnie.cpp Guillot_Natthan_Compagnie.h
+	g++ -c Guillot_Natthan_Compagnie.cpp
 
 clean:
 	rm *.o output
